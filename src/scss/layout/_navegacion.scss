@@ -1,0 +1,85 @@
+.derecha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet{
+        align-items: flex-end;
+    }
+
+    .dark-mode-boton{
+        width: 3rem;
+        margin: 2rem 0;
+        filter: invert(100%);
+
+        &:hover{
+            cursor: pointer;
+        }
+        @include tablet{
+            margin-top: .5rem;
+        }
+    }
+}
+
+
+.barra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+.navegacion{
+
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility .3s ease-in-out , opacity .5s linear, height .2s;
+    
+    @include tablet{
+        display: flex;
+        column-gap: 1.8rem;
+        align-items: center;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    a{
+        color: $blanco;
+        text-decoration: none;
+        font-size: 2.2rem;
+        display: block;
+        text-align: center;
+        &:hover{
+            color:$verde; 
+        }
+    }
+}
+
+/**Menu*/
+.mobile-menu{
+    @include tablet{
+        display: none;
+    }
+
+    img{
+        width: 5rem;
+        /*margin: 0 auto;Como yo lo hice*/
+    }
+}
+
+.mostrar{
+    // display: flex;
+    // flex-direction: column;
+
+    // @include tablet{
+    //     flex-direction: row;
+    // }
+
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}

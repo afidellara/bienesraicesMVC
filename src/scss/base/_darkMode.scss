@@ -1,0 +1,90 @@
+.dark-mode {
+  background-color: darken($grisOscuro, 10);
+
+  p {
+    color: $blanco;
+  }
+
+  a,
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $gris;
+  }
+
+  .anuncios {
+    background-color: $grisOscuro;
+    border: 1px solid $grisOscuro;
+
+    .precio {
+      color: $verde;
+    }
+
+    .iconos-caracteristicas {
+      img {
+        filter: invert(100%);
+      }
+    }
+  }
+
+  .nosotros-texto {
+    blockquote {
+      color: $gris;
+    }
+  }
+
+  .resumen-propiedad{
+    .iconos-caracteristicas {
+      img {
+        filter: invert(100%);
+      }
+    }
+
+    .precio{
+      color: $verde;
+    }
+  }
+
+  .texto-entrada{
+    span{
+      color: $amarillo; 
+    }
+  }
+
+  .formulario{
+    label,legend, p{
+      color: $gris; 
+    }
+
+    input, textarea, select:not([type="submit"]){
+      background-color: $grisOscuro;
+      color: $blanco;
+      border: 1px solid $grisOscuro;
+    }
+  }
+
+  .propiedades{
+    tr, td{
+      color: $blanco;
+      background-color: darken($gris,80);
+      text-align: center;
+    }
+  }
+  
+.boton-verde{
+    @include boton($verde, inline-block); 
+}
+
+
+.boton-amarillo{
+    @include boton($amarillo, inline-block); 
+}
+
+.boton-amarillo-block{
+    @include boton($amarillo, block); 
+}
+
+}
+
+

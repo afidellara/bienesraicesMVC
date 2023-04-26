@@ -1,0 +1,23 @@
+{
+    "name": "alejandro-lara/bienes-raices11ene2023",
+    "description": "Crando un proyecto con POO",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Alejandro Lara Miranda",
+            "email": "afidellara@unicesar.edu.co"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.7",
+        "phpmailer/phpmailer": "^6.7"
+    },
+    "autoload": {
+        "psr-4": {
+            
+            "Model\\":"./models",
+            "MVC\\":"./",
+            "Controllers\\":"./controllers"
+        }
+    }
+}
